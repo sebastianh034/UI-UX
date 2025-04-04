@@ -1,0 +1,350 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Mobile Container */
+.mobile-container {
+    max-width: 375px;
+    margin: 0 auto;
+    background-image: url('../images/background.png');
+    background-size: 100% 100%;  /* Ensures image covers entire container */
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;  /* Minimum height of viewport */
+    height: 812px;      /* Fixed height as fallback */
+    position: relative;
+    overflow-y: auto;
+    color: #031f4b;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #001940;
+    border-radius: 30px;
+    margin: 15px 10px;
+    position: sticky;
+    top: 15px;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 5px;
+}
+
+.logo img.fuel-logo {
+    height: 40px;
+    width: 40px;
+}
+
+.logo span {
+    font-size: 36px;
+    font-weight: 300;
+    color: white;
+    margin-left: 5px;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.menu-icon svg rect {
+    fill: white;
+}
+
+/* Content Styles */
+.content {
+    padding: 0 15px 20px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 30px 0 20px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+    color: #1e3d76;
+    text-transform: uppercase;
+}
+
+.video-container {
+    position: relative;
+    width: 335px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 25, 64, 0.15);
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.video-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Features Section */
+.features {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1e3d76;
+}
+
+.features p {
+    font-size: 14px;
+    padding-left: 25px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #031f4b;
+}
+
+/* Learn More Button */
+.learn-more-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 30px auto;
+    display: block;
+    text-transform: uppercase;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonial Section */
+.testimonial {
+    margin-top: 30px;
+    padding: 20px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 25, 64, 0.1);
+}
+
+.testimonial h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1e3d76;
+    text-align: center;
+    margin-top: 0;
+}
+
+.testimonial-content {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #031f4b;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.avatar img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    left: 0;
+    padding: 0 10px;
+}
+
+.nav-button {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.nav-button.prev {
+    margin-left: -20px;
+}
+
+.nav-button.next {
+    margin-right: -20px;
+}
+
+/* Tools Section */
+.tools {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.tools h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1e3d76;
+}
+
+.globe-illustration {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+}
+
+.globe-illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.tools p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #031f4b;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #001940;
+    border-radius: 30px 30px 30px 30px; 
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 60px;
+}
+.footer-logo-text {
+    height: 60px;
+    width: auto; 
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.address {
+    color: white;
+}
+
+.address p {
+    margin: 2px 0;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    background-color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icon.facebook {
+    background-color: #3b5998;
+}
+
+.social-icon.youtube {
+    background-color: #ff0000;
+}
+
+.social-icon.linkedin {
+    background-color: #0077b5;
+}
