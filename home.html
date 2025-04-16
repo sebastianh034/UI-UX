@@ -12,11 +12,10 @@
         <div class="container">
             <nav>
                 <a href="#" class="logo">
-                    <!-- Replace this with your actual logo -->
-                    <div class="logo-placeholder">
-                        <img src="logo-placeholder.png" alt="fuel logo">
+                    <div class="logo-container">
+                        <img src="/images/fuel-button-white.png" alt="fuel logo icon" class="logo-icon">
+                        <img src="/images/fuel.AI.png" alt="fuel text logo" class="logo-text-image">
                     </div>
-                    <span class="logo-text">fuel<span class="logo-dot">.</span></span>
                 </a>
                 <ul class="nav-links">
                     <li><a href="#">Home</a></li>
@@ -40,15 +39,14 @@
                     </p>
                     <button class="cta-button">BOOK A DEMO TODAY</button>
                 </div>
-                <div class="hero-video">
-                    <!-- Video Placeholder - Replace with your actual video embed -->
-                    <div class="video-placeholder">
-                        <div class="play-button">
-                            <span>▶</span>
-                        </div>
-                        <p class="placeholder-text">Your Video Here</p>
-                    </div>
-                </div>
+                <iframe
+                width="560" height="315"
+                src="https://www.youtube.com/embed/TmUJoSnpd00?"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              
             </div>
             
             <!-- Features Section -->
@@ -87,7 +85,7 @@
                 <div class="stats-chart-container">
                     <div class="graph-placeholder">
                         <!-- Replace this with your actual graph image -->
-                        <img src="graph-placeholder.jpg" alt="Sales statistics graph" class="stats-graph-image">
+                        <img src="/images/chart.svg" alt="Sales statistics graph" class="stats-graph-image">
                     </div>
                 </div>
                 
@@ -145,38 +143,31 @@
         <div class="container">
             <!-- Wheel diagram image placeholder -->
             <div class="wheel-diagram-container">
-                <img src="wheel-diagram.png" alt="Time allocation diagram showing percentages for various activities" class="wheel-diagram-image">
+                <img src="/images/without.webp" alt="Time allocation diagram showing percentages for various activities" class="wheel-diagram-image">
             </div>
             
             <!-- Testimonials Section -->
-            <div class="testimonials-container">
-                <div class="testimonial-slider">
-                    <div class="testimonial-navigation">
-                        <button class="nav-arrow prev-arrow">
-                            <span>←</span>
-                        </button>
-                        
-                        <div class="testimonial-slide active">
-                            <div class="testimonial-content">
-                                <h3 class="testimonial-title">SEE WHY TEAMS LOVE FUEL-AI</h3>
-                                <p class="testimonial-text">
-                                    "I was looking for the missing link in my sales process. One of our acquisitions guy had been working a lead for months with no success getting him on the calendar. We launched fuelAI and it immediately got the lead scheduled. I met with the client and we were able to close the deal with one phone call! AMAZING!!!"
-                                </p>
-                                
-                                <div class="testimonial-author">
-                                    <div class="author-image-container">
-                                        <img src="testimonial-author.png" alt="Testimonial author" class="author-image">
-                                    </div>
-                                </div>
+                <div class="testimonials-container">
+                    <div class="testimonial-slider">
+                        <div class="testimonial-navigation">
+                            <button class="nav-arrow prev-arrow">
+                                <span>←</span>
+                            </button>
+                            
+                            <div class="testimonial-slide active">
+                                <!-- Testimonial content will be dynamically inserted here by JavaScript -->
                             </div>
+                            
+                            <button class="nav-arrow next-arrow">
+                                <span>→</span>
+                            </button>
                         </div>
                         
-                        <button class="nav-arrow next-arrow">
-                            <span>→</span>
-                        </button>
+                        <div class="testimonial-indicators">
+                            <!-- Indicators will be dynamically inserted here by JavaScript -->
+                        </div>
                     </div>
-                </div>
-                
+    
                 <div class="testimonial-sidebar">
                     <h3 class="sidebar-title">What they Love about us!</h3>
                     <p class="sidebar-text">
@@ -184,22 +175,117 @@
                     </p>
                 </div>
             </div>
-        </div>
+
+            <!-- Add script tag before closing body tag -->
+            <script src="app.js"></script>
+            </div>
     </section>
 
     <!-- Automation Section -->
     <section class="automation-section">
         <div class="container">
             <h2 class="section-title">AUTOMATION THAT FEELS LIKE YOUR BEST REP</h2>
-            <!-- Additional content for automation section would go here -->
+            
+            <div class="automation-features">
+                <div class="feature-column">
+                    <div class="feature-box">
+                        <h3 class="feature-box-title">AUTHENTIC MESSAGING</h3>
+                        <p class="feature-box-description">
+                            Our AI mirrors your brand's tone and voice, delivering natural, relational communication that doesn't feel robotic.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="feature-column">
+                    <div class="feature-box">
+                        <h3 class="feature-box-title">MULTI-CHANNEL ENGAGEMENT</h3>
+                        <p class="feature-box-description">
+                            Reach leads where they are—via email, text, voicemail, live chat, and Facebook Messenger.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="feature-column">
+                    <div class="feature-box">
+                        <h3 class="feature-box-title">INTELLIGENT FOLLOW-UPS</h3>
+                        <p class="feature-box-description">
+                            fuel.AI learns from every interaction, ensuring consistent, thoughtful responses that boost lead conversions.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="feature-column">
+                    <div class="feature-box">
+                        <h3 class="feature-box-title">EFFORTLESS SCALABILITY</h3>
+                        <p class="feature-box-description">
+                            Seamlessly integrates with your CRM while streamlining workflows, all without losing the personal touch or adding to your team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-container">
+                <button class="cta-button secondary-cta">BOOK A DEMO TODAY</button>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Integration Section -->
+    <section class="integration-section">
         <div class="container">
-            <p>&copy; 2025 fuel.AI. All rights reserved.</p>
+            <h2 class="section-title">CONNECT WITH<br>THE TOOLS YOU LOVE</h2>
+            
+            <div class="globe-container">
+                <!-- This would be an image or SVG in a real implementation -->
+                <div class="globe-image">
+                    <!-- The globe with tool icons surrounding it would be an image -->
+                    <img src="/images/globe.png" alt="Globe with integration tool icons" class="globe-img">
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
+
+<!-- Updated Footer with Inline Layout -->
+<section class="footer-contact">
+    <div class="footer-container">
+        <!-- Left side with logo -->
+        <div class="footer-logo">
+            <div class="logo-inline-container">
+                <img src="./images/fuel-button-white.png" alt="fuel flame icon" class="footer-flame">
+                <img src="./images/fuel.AI.png" alt="fuel text logo" class="footer-text">
+            </div>
+        </div>
+        
+        <!-- Right side with contact info -->
+        <div class="footer-info">
+            <div class="footer-contact-text">
+                <h3 class="footer-title">CONTACT US</h3>
+                <p class="footer-phone">PHONE</p>
+                <p class="footer-phone-number">(435) 375-3509</p>
+                <p class="footer-email">EMAIL</p>
+                <p class="footer-email-address">EXAMPLEEMAIL@GMAIL.COM</p>
+            </div>
+            
+            <div class="footer-address-social">
+                <div class="footer-address">
+                    <p>85 N 300 W #C<br>WASHINGTON UTAH<br>84790</p>
+                </div>
+                
+                <!-- Social media icons -->
+                <div class="footer-social">
+                    <a href="#" class="social-icon">
+                        <img src="./images/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="./images/youtube.webp" alt="YouTube">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="./images/linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
