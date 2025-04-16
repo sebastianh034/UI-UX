@@ -1,0 +1,620 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #0b2c4d;
+    background-color: #e6f1fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #002153;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+}
+
+.logo-placeholder {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+}
+
+.logo-dot {
+    color: #00BFFF;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px; /* Equal margin on both sides */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+/* Hero section styles */
+.hero {
+    padding: 50px 0;
+}
+
+.hero-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0b2c4d;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hero-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-heading {
+    font-size: 28px;
+    color: #0b2c4d;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.hero-description {
+    color: #0b2c4d;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.cta-button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff5252;
+}
+
+.hero-video {
+    flex: 1;
+    text-align: center;
+}
+
+.video-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.play-button {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.play-button span {
+    font-size: 24px;
+    color: #0b2c4d;
+}
+
+.placeholder-text {
+    color: #666;
+    font-weight: bold;
+}
+
+/* Features section styles */
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature {
+    flex: 1;
+}
+
+.feature-title {
+    color: #0b2c4d;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    color: #0b2c4d;
+    font-size: 14px;
+}
+
+/* Stats Section Styles */
+.stats-section {
+    padding: 60px 0;
+    background-color: #e6f1fa;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0b2c4d;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.stats-container {
+    display: flex;
+    gap: 30px;
+}
+
+/* Original chart styles (keep for backward compatibility) */
+.stats-chart {
+    flex: 3;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* New graph image placeholder styles */
+.stats-chart-container {
+    flex: 3;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.graph-placeholder {
+    width: 100%;
+    height: 400px; /* Adjust height as needed to match your graph image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-graph-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* This ensures the image maintains its aspect ratio */
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.stat-bar {
+    height: 24px;
+    border-radius: 4px;
+}
+
+.bar-80 {
+    width: 80%;
+    background-color: #00c2ff;
+}
+
+.bar-10 {
+    width: 10%;
+    background-color: #00c2ff;
+}
+
+.bar-5 {
+    width: 5%;
+    background-color: #00c2ff;
+}
+
+.bar-3 {
+    width: 3%;
+    background-color: #00c2ff;
+}
+
+.bar-2 {
+    width: 2%;
+    background-color: #00c2ff;
+}
+
+.stat-info {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-percentage {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00c2ff;
+    line-height: 1.2;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Connected stat boxes */
+.connected-stats {
+    position: relative;
+}
+
+.dotted-line {
+    border-top: 2px dotted #ccc;
+    position: absolute;
+}
+
+.line-to-8 {
+    width: 80px;
+    top: -130px;
+    right: 85px;
+}
+
+.line-to-48 {
+    width: 80px;
+    top: -74px;
+    right: 85px;
+}
+
+.line-to-44 {
+    width: 80px;
+    top: -18px;
+    right: 85px;
+}
+
+.stat-box {
+    position: absolute;
+    border: 1px solid #00c2ff;
+    border-radius: 8px;
+    padding: 10px 15px;
+    background-color: white;
+    width: 220px;
+    right: -140px;
+}
+
+.box-8 {
+    top: -147px;
+}
+
+.box-48 {
+    top: -90px;
+}
+
+.box-44 {
+    top: -34px;
+}
+
+.stat-description {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.3;
+}
+
+/* Highlight boxes */
+.highlight-stats {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.highlight-box {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.highlight-percentage {
+    font-size: 34px;
+    font-weight: bold;
+    color: #0b2c4d;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.highlight-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Service Features Section */
+.service-features {
+    padding: 60px 0;
+    background-color: #e6f1fa;
+}
+
+.service-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.service-card {
+    flex: 1;
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.service-title {
+    color: #0b2c4d;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.service-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Time Wheel Diagram Section */
+.time-wheel-section {
+    padding: 60px 0;
+    background-color: #e6f1fa;
+}
+
+.wheel-diagram-container {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.wheel-diagram-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Testimonials Section */
+.testimonials-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.testimonial-slider {
+    flex: 3;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.testimonial-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-arrow {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #00c2ff;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-slide {
+    flex: 1;
+}
+
+.testimonial-title {
+    color: #0b2c4d;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonial-text {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.testimonial-author {
+    display: flex;
+    justify-content: center;
+}
+
+.author-image-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.author-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-sidebar {
+    flex: 2;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-title {
+    color: #0b2c4d;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar-text {
+    color: #0b2c4d;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Automation Section */
+.automation-section {
+    padding: 60px 0;
+    background-color: #e6f1fa;
+}
+
+/* Footer */
+footer {
+    background-color: #002153;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .hero-main {
+        flex-direction: column;
+    }
+    
+    .features {
+        flex-direction: column;
+    }
+    
+    .stats-container {
+        flex-direction: column;
+    }
+    
+    .service-cards {
+        flex-direction: column;
+    }
+    
+    .hero-text {
+        max-width: 100%;
+    }
+    
+    .connected-stats {
+        display: none;
+    }
+    
+    .graph-placeholder {
+        height: auto;
+    }
+    
+    .testimonials-container {
+        flex-direction: column;
+    }
+    
+    .testimonial-navigation {
+        flex-direction: column;
+    }
+    
+    .nav-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .prev-arrow {
+        left: 10px;
+    }
+    
+    .next-arrow {
+        right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .stat-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .stat-info {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .graph-placeholder {
+        height: 250px;
+    }
+    
+    .wheel-diagram-container {
+        margin-bottom: 40px;
+    }
+}
