@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Fuel AI</title>
     <link rel="stylesheet" href="home.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -32,11 +33,20 @@
         </div>
     </header>
 
-    <!-- Contact Form Section (renamed from contact-section to contact-form-section) -->
-    <section class="contact-form-section">
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form-section" class="contact-form-section">
         <div class="contact-container">
             <h2 class="contact-title">CONTACT US</h2>
-            <form class="contact-form">
+            <form id="contact-form" class="contact-form">
                 <div class="form-group">
                     <label for="firstName" class="form-label">First name:</label>
                     <input type="text" id="firstName" class="form-input">
@@ -71,6 +81,26 @@
                     <button type="submit" class="submit-button">Submit</button>
                 </div>
             </form>
+        </div>
+    </section>
+
+    <!-- Confirmation Section (Hidden by default) -->
+    <section id="confirmation-section" class="confirmation-section" style="display: none;">
+        <div class="confirmation-container">
+            <div class="checkmark-icon">
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                    <path fill="none" stroke="white" stroke-width="5" d="M14,27 L22,35 L38,15" />
+                </svg>
+            </div>
+            
+            <div class="envelope-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="M22,5L12,13L2,5" />
+                </svg>
+            </div>
+            
+            <h2 class="confirmation-message">Your submission has been received.</h2>
         </div>
     </section>
 
@@ -116,8 +146,5 @@
             </div>
         </div>
     </section>
-    
-    <!-- JavaScript -->
-    <script src="app.js"></script>
 </body>
 </html>

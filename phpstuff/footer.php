@@ -1,4 +1,3 @@
-<!-- Footer Section -->
 <section class="footer-contact">
   <div class="footer-container">
     <div class="footer-logo">
@@ -22,14 +21,14 @@
           <p>85 N 300 W #C<br />WASHINGTON UTAH<br />84790</p>
         </div>
 
-        <div class="footer-social">
-          <a href="#" class="social-icon">
+        <div class="footer-social" style="text-align: center; margin-top: 40px;">
+          <a href="https://www.facebook.com/fuelAI/?_rdr" target="_blank" class="social-icon">
             <img src="<?php echo get_template_directory_uri(); ?>/images/facebook.png" alt="Facebook" />
           </a>
-          <a href="#" class="social-icon">
+          <a href="https://www.youtube.com/channel/UC3XoZMivzz08ZfVtJg2ZHRg" target="_blank" class="social-icon">
             <img src="<?php echo get_template_directory_uri(); ?>/images/youtube.webp" alt="YouTube" />
           </a>
-          <a href="#" class="social-icon">
+          <a href="https://www.linkedin.com/company/fuel-ai/" target="_blank" class="social-icon">
             <img src="<?php echo get_template_directory_uri(); ?>/images/linkedin.png" alt="LinkedIn" />
           </a>
         </div>

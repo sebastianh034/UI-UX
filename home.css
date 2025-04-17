@@ -1164,6 +1164,56 @@ footer {
     background-color: #ff5252;
 }
 
+/* Confirmation Page Styles */
+.confirmation-section {
+    background-color: #e6edf4;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    text-align: center;
+}
+
+.confirmation-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkmark-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.checkmark {
+    width: 40px;
+    height: 40px;
+    fill: white;
+}
+
+.envelope-icon {
+    width: 160px;
+    height: 160px;
+    margin: 20px 0;
+}
+
+.confirmation-message {
+    color: #194175;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
 /* Responsive styles */
 @media (max-width: 992px) {
     .logo {
@@ -1380,6 +1430,23 @@ footer {
     .form-input {
         padding: 8px;
     }
+    .confirmation-container {
+        padding: 0 15px;
+    }
+    
+    .checkmark-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .envelope-icon {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .confirmation-message {
+        font-size: 20px;
+    }
 
 }
 @media (max-width: 480px) {
@@ -1403,5 +1470,26 @@ footer {
     .submit-button {
         padding: 8px 25px;
         font-size: 14px;
+    }
+    .confirmation-section {
+        padding: 30px 0;
+    }
+    
+    .confirmation-container {
+        padding: 0 10px;
+    }
+    
+    .checkmark-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .envelope-icon {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .confirmation-message {
+        font-size: 18px;
     }
 }

@@ -1,4 +1,58 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Check if we need to show form or confirmation
+    const urlParams = new URLSearchParams(window.location.search);
+    const showConfirmation = urlParams.get('submitted');
+    
+    // Show confirmation section if URL has submitted parameter
+    if (showConfirmation === 'true') {
+        document.getElementById('contact-form-section').style.display = 'none';
+        document.getElementById('confirmation-section').style.display = 'flex';
+        
+        // If page is refreshed, go back to the form
+        if (performance.navigation.type === 1) {
+            window.location.href = 'contact.html';
+        }
+    }
+    
+    // -------- FORM SUBMISSION FUNCTIONALITY --------
+    const contactForm = document.querySelector('.contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+            
+            // Simple form validation
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            
+            // Check if required fields are filled
+            if (!firstName || !lastName || !email) {
+                alert('Please fill out all required fields.');
+                return;
+            }
+            
+            // Simple email validation
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            
+            // If validation passes, show confirmation and add URL parameter
+            document.getElementById('contact-form-section').style.display = 'none';
+            document.getElementById('confirmation-section').style.display = 'flex';
+            
+            // Change URL to include submitted parameter without refreshing page
+            const newUrl = window.location.pathname + '?submitted=true';
+            window.history.pushState({ submitted: true }, '', newUrl);
+            
+            // In a real implementation, you would submit the form data to a server here
+            // For example: fetch('/submit-form', { method: 'POST', body: new FormData(contactForm) });
+        });
+    }
+
     // -------- HAMBURGER MENU FUNCTIONALITY --------
     // Get hamburger menu elements
     const hamburger = document.querySelector('.hamburger-menu');

@@ -1,4 +1,58 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Check if we need to show form or confirmation
+    const urlParams = new URLSearchParams(window.location.search);
+    const showConfirmation = urlParams.get('submitted');
+    
+    // Show confirmation section if URL has submitted parameter
+    if (showConfirmation === 'true') {
+        document.getElementById('contact-form-section').style.display = 'none';
+        document.getElementById('confirmation-section').style.display = 'flex';
+        
+        // If page is refreshed, go back to the form
+        if (performance.navigation.type === 1) {
+            window.location.href = 'contact.html';
+        }
+    }
+    
+    // -------- FORM SUBMISSION FUNCTIONALITY --------
+    const contactForm = document.querySelector('.contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+            
+            // Simple form validation
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            
+            // Check if required fields are filled
+            if (!firstName || !lastName || !email) {
+                alert('Please fill out all required fields.');
+                return;
+            }
+            
+            // Simple email validation
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            
+            // If validation passes, show confirmation and add URL parameter
+            document.getElementById('contact-form-section').style.display = 'none';
+            document.getElementById('confirmation-section').style.display = 'flex';
+            
+            // Change URL to include submitted parameter without refreshing page
+            const newUrl = window.location.pathname + '?submitted=true';
+            window.history.pushState({ submitted: true }, '', newUrl);
+            
+            // In a real implementation, you would submit the form data to a server here
+            // For example: fetch('/submit-form', { method: 'POST', body: new FormData(contactForm) });
+        });
+    }
+
     // -------- HAMBURGER MENU FUNCTIONALITY --------
     // Get hamburger menu elements
     const hamburger = document.querySelector('.hamburger-menu');
@@ -58,19 +112,19 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "SEE WHY TEAMS LOVE FUEL-AI",
             text: " I was shocked at the impact this had on our sales team. One of our acquisition's guys had been working a lead for months with no success getting him on the calendar. We launched fuelAI and it immediately got the lead scheduled. I met with the client and we were able to close the deal with one phone call! AMAZING!!!!",
             author: "Jason Dehle",
-            image: "images/Jason-Dehle-Testimonial.webp"
+            image: "./images/Jason-Dehle-Testimonial.webp"
         },
         {
             title: "FUEL.AI CHANGED OUR BUSINESS",
             text: " As a solar company our team is constantly moving on to the next opportunity. We struggle to follow up. We needed to consistently reach out to all of our past leads and find those that are still interested. We deployed fuelAI and quickly found 50 deals that were ready to move forward and what's best was our team didn't have to do a thing. fuelAI is awesome!",
             author: "Jerry Moen",
-            image: "images/Jerry-Alta-Energy-Testimonial-Solar.webp"
+            image: "./images/Jerry-Alta-Energy-Testimonial-Solar.webp"
         },
         {
             title: "INCREDIBLE ROI",
             text: "Our team does a great job closing business, but our struggle has always been getting in contact with our leads. Once we talk to them generally, we do business together. We have seen cases where we had tried to get a hold of a lead over 60 times with no success, and with only 1 day of fuelAI doing the outreach the appointment was scheduled for us. This system is amazing, and the service from the team is top shelf",
             author: "Steve Jones",
-            image: "images/Steve-Jones-and-Jones-Financial-Testimonial-general.webp"
+            image: "./images/Steve-Jones-and-Jones-Financial-Testimonial-general.webp"
         }
     ];
     
