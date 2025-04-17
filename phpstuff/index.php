@@ -1,0 +1,9 @@
+<?php include("header.php"); ?>
+<?php include("hero.php"); ?>
+<?php include("features.php"); ?>
+<?php include("stats.php"); ?>
+<?php include("services.php"); ?>
+<?php include("testimonials.php"); ?>
+<?php include("automation.php"); ?>
+<?php include("integration.php"); ?>
+<?php include("footer.php"); ?>

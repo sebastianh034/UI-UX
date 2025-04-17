@@ -58,19 +58,19 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "SEE WHY TEAMS LOVE FUEL-AI",
             text: " I was shocked at the impact this had on our sales team. One of our acquisition's guys had been working a lead for months with no success getting him on the calendar. We launched fuelAI and it immediately got the lead scheduled. I met with the client and we were able to close the deal with one phone call! AMAZING!!!!",
             author: "Jason Dehle",
-            image: "./images/Jason-Dehle-Testimonial.webp"
+            image: "images/Jason-Dehle-Testimonial.webp"
         },
         {
             title: "FUEL.AI CHANGED OUR BUSINESS",
             text: " As a solar company our team is constantly moving on to the next opportunity. We struggle to follow up. We needed to consistently reach out to all of our past leads and find those that are still interested. We deployed fuelAI and quickly found 50 deals that were ready to move forward and what's best was our team didn't have to do a thing. fuelAI is awesome!",
             author: "Jerry Moen",
-            image: "./images/Jerry-Alta-Energy-Testimonial-Solar.webp"
+            image: "images/Jerry-Alta-Energy-Testimonial-Solar.webp"
         },
         {
             title: "INCREDIBLE ROI",
             text: "Our team does a great job closing business, but our struggle has always been getting in contact with our leads. Once we talk to them generally, we do business together. We have seen cases where we had tried to get a hold of a lead over 60 times with no success, and with only 1 day of fuelAI doing the outreach the appointment was scheduled for us. This system is amazing, and the service from the team is top shelf",
             author: "Steve Jones",
-            image: "./images/Steve-Jones-and-Jones-Financial-Testimonial-general.webp"
+            image: "images/Steve-Jones-and-Jones-Financial-Testimonial-general.webp"
         }
     ];
     

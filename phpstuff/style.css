@@ -1,4 +1,18 @@
+/*
+Theme Name: FuelAI
+Text Domain: FuelAI
+Version: 0.1
+Description:
+Tags:
+Author:
+Author URI:
+Theme URI: 
+*/
+
 /* Base styles */
+.wp-block-cover {
+    height:auto !important;
+}
 * {
     margin: 0;
     padding: 0;
