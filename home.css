@@ -908,10 +908,8 @@ nav {
 }
 
 /* Hide old contact section for backward compatibility */
-.contact-section {
-    display: none;
-}
-
+/* MODIFIED: Changed to only hide the old contact section, not our new one */
+/* Now using display: none only for .contact-card */
 .contact-card {
     display: none;
 }
@@ -939,6 +937,231 @@ footer {
     width: 50px;
     height: 32px;
     border-radius: 50%;
+}
+
+/* About Us Page Styles */
+/* Mission Section */
+.mission-section {
+    padding: 80px 0;
+    background-color: #e6f1fa;
+}
+
+.mission-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mission-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0b2c4d;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.mission-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.mission-text {
+    flex: 1;
+}
+
+.mission-description {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #0b2c4d;
+}
+
+.mission-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.circular-image {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Our Story Section Styles */
+.story-section {
+    margin-top: 80px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.story-title {
+    font-size: 42px;
+    font-weight: bold;
+    color: #0b2c4d;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.story-content {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.story-paragraph {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #0b2c4d;
+    margin-bottom: 25px;
+}
+
+.story-paragraph:last-child {
+    margin-bottom: 0;
+}
+/* Join Our Team Section Styles */
+.team-join-section {
+    padding: 0 0 80px 0;
+    background-color: #e6f1fa;
+}
+
+.team-globe-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-globe-image {
+    max-width: 100%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.team-join-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0b2c4d;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-join-description {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.team-paragraph {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #0b2c4d;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.team-button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.team-button {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.team-button:hover {
+    background-color: #ff5252;
+}
+
+/* NEW Contact Form Styles */
+.contact-form-section {
+    background-color: #e6edf4;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.contact-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-title {
+    color: #194175;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    color: #194175;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.hear-about-input {
+    height: 80px; /* Make this input field taller for more text */
+    resize: vertical;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.submit-button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #ff5252;
 }
 
 /* Responsive styles */
@@ -998,6 +1221,24 @@ footer {
     
     .automation-features {
         flex-direction: column;
+    }
+    
+    /* About Us page responsive styles */
+    .mission-content {
+        flex-direction: column;
+    }
+    
+    .story-section {
+        margin-top: 60px;
+    }
+    
+    .story-title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    
+    .story-content {
+        padding: 30px;
     }
     
     /* Updated footer responsive styles */
@@ -1093,6 +1334,27 @@ footer {
         margin: 0 3px;
     }
     
+    /* About Us page mobile styles */
+    .mission-description {
+        font-size: 20px;
+    }
+    
+    .story-paragraph {
+        font-size: 16px;
+    }
+    
+    .circular-image {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .team-join-title {
+        font-size: 30px;
+    }
+    
+    .team-paragraph {
+        font-size: 16px;
+    }
     /* Extra small device adjustments for footer */
     .logo-inline-container {
         flex-direction: column;
@@ -1102,5 +1364,44 @@ footer {
     .footer-flame {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+    .contact-container {
+        padding: 0 15px;
+    }
+    
+    .contact-title {
+        font-size: 24px;
+    }
+    
+    .form-label {
+        font-size: 14px;
+    }
+    
+    .form-input {
+        padding: 8px;
+    }
+
+}
+@media (max-width: 480px) {
+    .contact-form-section {
+        padding: 30px 0;
+    }
+    
+    .contact-container {
+        padding: 0 10px;
+    }
+    
+    .contact-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .form-group {
+        gap: 10px;
+    }
+    
+    .submit-button {
+        padding: 8px 25px;
+        font-size: 14px;
     }
 }
