@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="cta-container">
-            <a href="<?php echo home_url('/contact'); ?>" class="cta-button secondary-cta">BOOK A DEMO TODAY</a>
+        <a href="<?php echo site_url('/contact'); ?>" class="cta-button secondary-cta">BOOK A DEMO TODAY</a>
         </div>
     </div>
 </section>

@@ -7,7 +7,7 @@
                 <p class="hero-description">
                     AI-powered follow-up and scheduling that converts leads into appointments — so your sales team can focus on selling, not chasing.
                 </p>
-                <a href="<?php echo home_url('/contact'); ?>" class="cta-button secondary-cta">BOOK A DEMO TODAY</a>
+                <a href="<?php echo site_url('/contact'); ?>" class="cta-button secondary-cta">BOOK A DEMO TODAY</a>
                 </div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/TmUJoSnpd00" frameborder="0" allowfullscreen></iframe>
         </div>

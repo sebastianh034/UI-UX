@@ -23,8 +23,9 @@
       </a>
       <ul class="nav-links">
         <li><a href="<?php echo home_url(); ?>">Home</a></li>
-        <li><a href="<?php echo home_url('/about'); ?>">About Us</a></li>
-        <li><a href="<?php echo home_url('/contact'); ?>">Contact Us</a></li>
+        <li><a href="<?php echo site_url('/about'); ?>">About Us</a></li>
+        <li><a href="<?php echo site_url('/contact'); ?>">Contact Us</a></li>
+
       </ul>
       <div class="hamburger-menu">
         <span></span><span></span><span></span>
@@ -34,9 +35,9 @@
 
   <div class="mobile-menu">
     <ul>
-      <li><a href="<?php echo home_url(); ?>">Home</a></li>
-      <li><a href="<?php echo home_url('/about'); ?>">About Us</a></li>
-      <li><a href="<?php echo home_url('/contact'); ?>">Contact Us</a></li>
+        <li><a href="<?php echo home_url(); ?>">Home</a></li>
+        <li><a href="<?php echo site_url('/about'); ?>">About Us</a></li>
+        <li><a href="<?php echo site_url('/contact'); ?>">Contact Us</a></li>
     </ul>
   </div>
 </header>
