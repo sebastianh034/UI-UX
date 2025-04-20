@@ -333,7 +333,6 @@ nav {
 
 /* New graph image placeholder styles */
 .stats-chart-container {
-    flex: 3;
     background-color: white;
     border-radius: 12px;
     padding: 20px;
@@ -343,7 +342,7 @@ nav {
 
 .graph-placeholder {
     width: 100%;
-    height: 400px; /* Adjust height as needed to match your graph image */
+    height: 400px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -352,7 +351,7 @@ nav {
 .stats-graph-image {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* This ensures the image maintains its aspect ratio */
+    object-fit: contain; 
 }
 
 .stat-item {
@@ -475,10 +474,8 @@ nav {
 }
 
 .highlight-box {
-    background-color: white;
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .highlight-percentage {
@@ -508,10 +505,8 @@ nav {
 
 .service-card {
     flex: 1;
-    background-color: white;
     border-radius: 12px;
     padding: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .service-title {
@@ -769,11 +764,9 @@ nav {
 }
 
 .feature-box {
-    background-color: white;
     border-radius: 10px;
     padding: 20px;
     height: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .feature-box-title {
@@ -1008,8 +1001,6 @@ footer {
 .mission-description {
     border-radius: 15px;
     padding: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    background-color: white;
     font-size: 20px;
     line-height: 1.5;
     color: #0b2c4d;
@@ -1049,10 +1040,8 @@ footer {
 }
 
 .story-content {
-    background-color: white;
     border-radius: 15px;
     padding: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .story-paragraph {
