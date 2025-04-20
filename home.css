@@ -9,7 +9,7 @@
 body {
     line-height: 1.6;
     color: #0b2c4d;
-    background-color: #e6f1fa;
+    background-color: #B6CAE2;
 }
 
 .container {
@@ -69,6 +69,9 @@ nav {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #aaafb0;
 }
 
 /* Hamburger Menu Styles */
@@ -173,7 +176,7 @@ nav {
 .hero-description {
     color: #0b2c4d;
     margin-bottom: 25px;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .cta-button {
@@ -185,6 +188,45 @@ nav {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.get-started {   
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.tools-description {
+    text-align: left;
+    font-size: 20px;
+    max-width: 90%;
+    margin: 0 auto 20px auto;
+    line-height: 1.3; /* Makes text more compact vertically */
+    padding: 0 10%; /* Optional: adds some padding on the sides */
+}
+
+.section-description {
+    text-align: left;
+    font-size: 24px;
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+    line-height: 1.3; /* Makes text more compact vertically */
+    padding: 0 10%; /* Optional: adds some padding on the sides */
+}
+
+.get-started:hover {
+    background-color: #ff5252;
 }
 
 .cta-button:hover {
@@ -263,7 +305,7 @@ nav {
 /* Stats Section Styles */
 .stats-section {
     padding: 60px 0;
-    background-color: #e6f1fa;
+    background-color: #B6CAE2;
 }
 
 .section-title {
@@ -456,7 +498,7 @@ nav {
 /* Service Features Section */
 .service-features {
     padding: 60px 0;
-    background-color: #e6f1fa;
+    background-color: #B6CAE2;
 }
 
 .service-cards {
@@ -488,7 +530,7 @@ nav {
 /* Time Wheel Diagram Section */
 .time-wheel-section {
     padding: 60px 0;
-    background-color: #e6f1fa;
+    background-color: #B6CAE2;
 }
 
 .wheel-diagram-container {
@@ -709,7 +751,7 @@ nav {
 /* Automation Section */
 .automation-section {
     padding: 60px 0;
-    background-color: #e6f1fa;
+    background-color: #B6CAE2;
 }
 
 /* Automation Features Section Styles */
@@ -757,7 +799,6 @@ nav {
     font-size: 14px;
 }
 
-/* Integration Section Styles */
 .integration-section {
     padding: 60px 0;
     background-color: #e6f1fa;
@@ -772,12 +813,10 @@ nav {
 
 .globe-img {
     max-width: 100%;
+    padding-left: 90px;
     height: auto;
 }
 
-/* Updated Footer Styles for Inline Layout */
-
-/* Main contact footer with blue background */
 .footer-contact {
     background-color: #0b2c4d;
     padding: 30px 0;
@@ -907,9 +946,6 @@ nav {
     color: #00BFFF;
 }
 
-/* Hide old contact section for backward compatibility */
-/* MODIFIED: Changed to only hide the old contact section, not our new one */
-/* Now using display: none only for .contact-card */
 .contact-card {
     display: none;
 }
@@ -939,8 +975,6 @@ footer {
     border-radius: 50%;
 }
 
-/* About Us Page Styles */
-/* Mission Section */
 .mission-section {
     padding: 80px 0;
     background-color: #e6f1fa;
@@ -1083,11 +1117,11 @@ footer {
     transition: background-color 0.3s;
 }
 
+
 .team-button:hover {
     background-color: #ff5252;
 }
 
-/* NEW Contact Form Styles */
 .contact-form-section {
     background-color: #e6edf4;
     padding: 50px 0;
@@ -1138,7 +1172,7 @@ footer {
 }
 
 .hear-about-input {
-    height: 80px; /* Make this input field taller for more text */
+    height: 80px; 
     resize: vertical;
 }
 
