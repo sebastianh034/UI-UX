@@ -39,11 +39,13 @@
             
             <!-- Mobile Menu Overlay -->
             <div class="mobile-menu">
-                <ul>
-                    <li><a href="<?php echo home_url() ?>">Home</a></li>
-                    <li><a href="<?php echo get_permalink(get_page_by_path('info')); ?>">Information</a></li>
-                    <li><a href="<?php echo get_permalink(get_page_by_path('about')); ?>">About Us</a></li>
-                    <li><a href="<?php echo get_permalink(get_page_by_path('contact')); ?>">Contact Us</a></li> 
-                </ul>
+                <?php
+                    wp_nav_menu( array(
+                    'theme_location' => 'menu',
+                    'container'      => false,
+                    'menu_class'     => 'menu mobile',
+                    ) );
+                ?>
+                </div>
             </div>
         </header>
