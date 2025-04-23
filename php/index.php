@@ -14,6 +14,15 @@ get_header(); ?>
                         AI-powered follow-up and scheduling that converts leads into appointments — so your sales team can focus on selling, not chasing.
                     </p>
                     <button class = "cta-button" onclick="window.location.href=<?php echo get_permalink(get_page_by_path('contact') ); ?> ';">BOOK A DEMO TODAY</button>
+                    <button
+                        type="button"                                          
+                        class="get-started"
+                        onclick="window.location.href='<?php 
+                            echo esc_url( get_permalink( get_page_by_path( 'contact' ) ) ); 
+                        ?>';"
+                        >
+                        BOOK A DEMO TODAY
+                    </button>
                 </div> 
                 <iframe
                 width="560" height="315"
@@ -40,7 +49,7 @@ get_header(); ?>
                     echo esc_url( get_permalink( get_page_by_path( 'info' ) ) ); 
                 ?>';"
                 >
-  LEARN MORE ABOUT FUELAI
+  LEARN MORE ABOUT FUELAI 
 </button>
 
         </div>
