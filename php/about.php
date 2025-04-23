@@ -44,7 +44,7 @@ get_header(); ?>
         <div class="container">
             <div class="story-content">
                 <div class="team-globe-container">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/aboutusglobe.png" alt="Globe with integration tool icons">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/aboutusglobe.png" alt="Globe with integration tool icons" class ="team-globe-image">
                 </div>
                 
                 <h2 class="team-join-title">JOIN OUR TEAM</h2>
