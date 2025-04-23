@@ -13,8 +13,7 @@ get_header(); ?>
                 <!-- Graph Image Placeholder -->
                 <div class="stats-chart-container">
                     <div class="graph-placeholder">
-                        <!-- Replace this with your actual graph image -->
-                        <img src="/images/chart.svg" alt="Sales statistics graph" class="stats-graph-image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/chart.svg" alt="Sales statistics graph" class="stats-graph-image">
                     </div>
                 </div>
                 
