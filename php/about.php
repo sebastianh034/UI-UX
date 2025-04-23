@@ -17,7 +17,8 @@ get_header(); ?>
                 
                 <div class="mission-image">
                     <div class="circular-image">
-                        <img src="/images/lady.png" alt="Team collaboration">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/lady.png" alt="lady">
+
                     </div>
                 </div>
             </div>
@@ -43,7 +44,7 @@ get_header(); ?>
         <div class="container">
             <div class="story-content">
                 <div class="team-globe-container">
-                    <img src="/images/aboutusglobe.png" alt="Global team map" class="team-globe-image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/aboutusglobe.png" alt="Globe with integration tool icons">
                 </div>
                 
                 <h2 class="team-join-title">JOIN OUR TEAM</h2>

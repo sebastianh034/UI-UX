@@ -33,7 +33,7 @@ get_header(); ?>
             <p class="section-description">
                 Turn the burden into an opportunity with automation. Our software handles lead tracking, follow-ups, scheduling, and reminders—freeing your sales team to focus on what they do best: closing deals.
             </p>
-            <button onclick="window.location.href=<?php echo get_permalink(get_page_by_path('info') ); ?> ';">LEARN MORE ABOUT FUELAI</button>
+            <button class="cta-button" onclick="window.location.href=<?php echo get_permalink(get_page_by_path('info') ); ?> ';">LEARN MORE ABOUT FUELAI</button>
         </div>
     </section>
 
@@ -77,15 +77,18 @@ get_header(); ?>
     <section class="connect-tools">
         <div class="container">
             <h2 class="section-title">CONNECT TO YOUR FAVORITE TOOLS</h2>
+            
             <div class="globe-container">
-                <img src="/images/globe.png" alt="Globe with integration tool icons" class="globe-img">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/globe.png" alt="Globe with integration tool icons" class="globe-img">
             </div>
             <p class="tools-description">
                 Easily install with the software you already use. Our engineers connect directly to your CRM, messaging platforms, and software solutions for a seamless integration experience.
             </p>
-            <a href="/contact.html" class="get-started">GET STARTED</a>
+            <button class="cta-get-started" onclick="window.location.href=<?php echo get_permalink(get_page_by_path('info') ); ?> ';">STARTED</button>
         </div>
     </section>
 
 <?php get_footer(); ?>
+
+
 

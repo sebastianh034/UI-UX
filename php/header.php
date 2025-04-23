@@ -13,8 +13,8 @@
             <nav>
                 <a href="/index.html" class="logo">
                     <div class="logo-container">
-                        <img src="/images/fuel-button-white.png" alt="fuel logo icon" class="logo-icon">
-                        <img src="/images/fuel.AI.png" alt="fuel text logo" class="logo-text-image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>images/fuel-button-white.png" alt="fuel logo icon" class="logo-icon">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>images/fuel.AI.png" alt="fuel text logo" class="logo-text-image">
                     </div>
                 </a>
                 <div class="nav-links">

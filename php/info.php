@@ -114,7 +114,12 @@ get_header(); ?>
             </div>
             
             <div class="cta-container">
-                <a href="/contact.html" class="cta-button secondary-cta">BOOK A DEMO TODAY</a>
+            <button
+                class="cta-button secondary-cta"
+                onclick="window.location.href='<?php echo esc_url( get_permalink( get_page_by_path('contact') ) ); ?>';"
+                >
+                     BOOK A DEMO TODAY
+                </button>
             </div>
         </div>
     </section>
