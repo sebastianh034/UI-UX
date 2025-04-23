@@ -59,8 +59,17 @@ get_header(); ?>
                     </p>
                     
                     <div class="team-button-container">
-                        <a href="/contact.html" class="team-button">Submit Your Resume</a>
+                    <div class="team-button-container">
+                        <button
+                            type="button"
+                            class="team-button"
+                            onclick="window.location.href='<?php echo esc_url( home_url( 'contact' ) ); ?>';"
+                        >
+                            Submit Your Resume
+                        </button>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
