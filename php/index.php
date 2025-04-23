@@ -13,7 +13,6 @@ get_header(); ?>
                     <p class="hero-description">
                         AI-powered follow-up and scheduling that converts leads into appointments — so your sales team can focus on selling, not chasing.
                     </p>
-                    <button class = "cta-button" onclick="window.location.href=<?php echo get_permalink(get_page_by_path('contact') ); ?> ';">BOOK A DEMO TODAY</button>
                     <button
                         type="button"                                          
                         class="get-started"
